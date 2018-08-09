@@ -1,3 +1,31 @@
 ﻿html{
     
 }
+ul{
+    list-style:none;
+}
+.main-menu{
+    color:grey;
+    padding:0px;
+    margin:0px;
+}
+ul{
+    width:180px;
+}
+.main-menu a{
+    text-decoration: none;
+    border:1px solid #e5e5e5;
+    padding: 8px 14px;
+    color: white;
+    display:inline-block;
+    background-color: #2980b9;
+}
+.main-menu a:hover {
+    background-color: darkblue;
+    color:whitesmoke;
+}
+
+
+a:active{
+    
+}
