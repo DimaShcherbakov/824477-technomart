@@ -7,32 +7,40 @@
   </head>
   <body>
       <header>
-          <div class="logo-top">
-              <p>ТЕХНОМАРТ</p>
+           <div class="logo-top">
+              <a href="index.html">ТЕХНОМАРТ</a>
           </div> 
-          <p>
+          <form class="search">
               <img src="img/icon-search.svg" width="17" height="17"> 
-              Поиск 
-          </p>         
-          <p>
-              <img src="img/icon-bookmark.svg" width="14" height="16">
-              Закладки:0
+              <input type="search" placeholder="Поиск:">
+          </form>         
+          <p class="bookmarks">
+              <a href="">
+                  <img src="img/icon-bookmark.svg" width="14" height="16">
+                  Закладки:0
+              </a>
           </p>
-          <p>
-             <img src="img/icon-cart.svg" width="15" height="15">
-              Корзина:0 
+          <p class="product-basket">
+             <a href="">
+                 <img src="img/icon-cart.svg" width="15" height="15">
+                 Корзина:0 
+             </a>
           </p>
-          <p>
+          <p class="checkout">
               <a href="">Оформить заказ</a>
           </p>
           <h1>Интернет магазин строительных материалов и инструментов для ремонта</h1>
-          <img src="img/icon-phone.svg" width="19" height="19">
-          <a href="tel:+">+7(812)555-05-55</a>
+          <a href="tel:+">
+              <img src="img/icon-phone.svg" width="19" height="19" alt="Номер телефона +7(812)555-05-55">
+              +7(812)555-05-55
+          </a>
           <address>г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</address>
           <ul>
               <li>
-                  <a href="">Войти</a>
-                  <img src="img/icon-login.svg" width="20" height="17">
+                  <a href="">
+                      Войти
+                      <img src="img/icon-login.svg" width="20" height="17">
+                  </a>
               </li>
               <li><a href="">Регистрация</a></li>
           </ul>
@@ -54,27 +62,28 @@
               <li>
                   <b>Материалы</b> 
                   <img src="img/icon-1.svg" width="44" height="65">
-                  <p><a href="">НА ЛЮБОЙ ВКУС</a></p>
+                  <img src="img/new-flag.png" width="60" height="59" alt="Новинка"> 
+                  <p class="catalog-link"><a href="">НА ЛЮБОЙ ВКУС</a></p>
               </li>
               <li>
                   <b>Инструмент</b>
                   <img src="img/icon-2.svg" width="75" height="61">
-                  <p><a href="">НА ВСЕ СЛУЧАИ</a></p> 
+                  <p class="catalog-link"><a href="">НА ВСЕ СЛУЧАИ</a></p> 
               </li>
               <li>
                   <b>Техника</b>
                   <img src="img/icon-3.svg" width="78" height="62">
-                  <p><a href="">ДЛЯ СТРОЙКИ</a></p>
+                  <p class="catalog-link"><a href="">ДЛЯ СТРОЙКИ</a></p>
               </li>
               <li> 
                   <b>Скидка 50%</b>
                   <img src="img/icon-4.svg" width="59" height="72">
-                  <p><a href=""> НА 350 ТОВАРОВ</a></p>
+                  <p class="catalog-link"><a href=""> НА 350 ТОВАРОВ</a></p>
               </li>
               <li> 
                   <b>Доставка</b>
                   <img src="img/icon-5.svg" width="78" height="63">
-                  <p><a href="">БЕСПЛАТНО</a></p>
+                  <p class="catalog-link"><a href="">БЕСПЛАТНО</a></p>
               </li>
            </ul>
            <div>
@@ -91,46 +100,69 @@
             <section>
                <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
                <a href="">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a> 
-                <ul>
-                    <li>
-                        <h3>Перфоратор Bosch BFG 9000</h3>  
-                        <img src="img/snippet-32961.jpg" width="184" height="164">
-                        <del>32500</del>
-                        <ins>25500</ins>
-                    </li>
-                    <li>
-                        <h3>Перфоратор Bosch BFG 3000</h3>  
-                        <img src="img/snippet-18927.jpg" width="127" height="112">
-                        
-                        <del>25500 </del>
-                        <ins>15500</ins>
-                    </li>
-                    <li>
-                        <h3>Перфоратор Bosch BFG 6000</h3>
-                        <img src="img/snippet-945.jpg" width="144" height="128">
-                        <del> 30500 </del>
-                        <ins> 25500 </ins>
-                    </li>
-                    <li>
-                        <h3>Перфоратор Bosch BFG 2000</h3>  
-                        <img src="img/snippet-18927-1.jpg" width="127" height="112">
-                        <img src="img/new-flag.png" width="60" height="59">
-                        <p> 12500</p>
-                    </li>
+                <ul class="index-list">
+                    <li class="catalog-item">
+                       <a href="">
+                        <p class="catalog-item-image">
+                            <img src="img/snippet-32961.jpg" width="184" height="164">
+                        </p>
+                        <h3>
+                            <span class="product-name">Перфоратор BOSCH BFG 9000</span>
+                        </h3>
+                      </a>
+                    <del>32500</del>
+                    <ins>25500</ins>    
+                  </li>
+                    <li class="catalog-item">
+                   <a href="">
+                        <p class="catalog-item-image">
+                            <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+                        </p>
+                        <h3>
+                            <span class="product-name">Перфоратор BOSCH BFG 3000</span>
+                        </h3>
+                  </a>
+                    <del>25500 </del>
+                    <ins>15500</ins>    
+                  </li>
+                    <li class="catalog-item">
+                    <a href=""> 
+                        <p class="catalog-item-image">
+                            <img src="img/snippet-945.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+                        </p>
+                        <h3>
+                            <span class="product-name">Перфоратор BOSCH BFG 6000</span>
+                        </h3>
+                    </a>
+                    <del>30500</del>
+                    <ins>25500</ins>
+                  </li>
+                    <li class="catalog-item">
+                    <a href="">
+                        <p class="catalog-item-image">
+                            <img src="img/new-flag.png" width="60" height="59" alt="Новинка"> 
+                            <img src="img/snippet-18927-1.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+                        </p>
+                        <h3>
+                            <span class="product-name">Перфоратор BOSCH BFG 2000</span>
+                        </h3> 
+                    </a>
+                    <p class="total-price">12500</p>
+                   </li>
                 </ul>
             </section>
             <section>
                <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2> 
                <a href="">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-               <ul>
-                   <li><img src="img/bosch.png" width="126" height="37"></li>
-                   <li><img src="img/Hitachi.png" width="169" height="31"></li>
-                   <li><img src="img/Makita.png" width="123" height="40"></li>
-                   <li><img src="img/LG.png" width="121" height="73"></li>
-                   <li><img src="img/DeWALT.png" width="146" height="44"></li>
-                   <li><img src="img/AEG.png" width="151" height="96"></li>
-                   <li><img src="img/Interscol.png" width="200" height="88"></li>
-                   <li><img src="img/Metabo.png" width="204" height="69"></li>
+               <ul class="companies-list">
+                   <li><img src="img/bosch.png" width="126" height="37" alt="Компания BOSCH"></li>
+                   <li><img src="img/Hitachi.png" width="169" height="31" alt="Компания HITACHI"></li>
+                   <li><img src="img/Makita.png" width="123" height="40" alt="Компания MAKITA"></li>
+                   <li><img src="img/LG.png" width="121" height="73" alt="Компания LG"></li>
+                   <li><img src="img/DeWALT.png" width="146" height="44" alt="Компания DeWALT"></li>
+                   <li><img src="img/AEG.png" width="151" height="96" alt="Компания AEG"></li>
+                   <li><img src="img/Interscol.png" width="200" height="88" alt="Компания ИНТЕРСКОЛ"></li>
+                   <li><img src="img/Metabo.png" width="204" height="69" alt="Компания METABO"></li>
                </ul>
             </section>
       
@@ -175,7 +207,7 @@
       
       <footer>
             <div class="logo-bottom">
-                <p>ТЕХНОМАРТ</p>
+                <a href="index.html">ТЕХНОМАРТ</a>
             </div>
             
             <ul>
@@ -195,10 +227,22 @@
             </ul>
             <p>2010-2017 Компания "Техномарт"</p>
             <br>Все права защищены
-            <ul>
-                <li><img src="img/icon-vk.svg" width="26" height="15"></li>
-                <li><img src="img/icon-fb.svg" width="12" height="22"></li>
-                <li><img src="img/icon-insta.svg" width="21" height="21"></li>
+            <ul class="networks">
+                <li>
+                    <a href="">
+                        <img src="img/icon-vk.svg" width="26" height="15">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/icon-fb.svg" width="12" height="22">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/icon-insta.svg" width="21" height="21">
+                    </a>
+                </li>
             </ul>
             <p>
                 Обратная связь:
