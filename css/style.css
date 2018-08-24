@@ -1,31 +1,276 @@
-﻿html{
+﻿body{
+    
+    font-family: 'Cuprum',Arial, sans-serif;
+    font-size:17px;
+    line-height: 18px;
+    font-weight: 400;
+    color:#ffffff;
+    
+    background-color:#f3f7f8;
     
 }
-ul{
-    list-style:none;
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.list{
+    list-style: none;
+}
+
+.header-top{
+    background-color:#293449;
+}
+.checkout{
+    background-color:#63a63e;
+}
+.main-page{
+    background-color:#ffffff;
+}
+.registration a{
+    font-size:21px;
+    line-height: 21px;
+    color:black;
+    
+    background-color: #ffffff;
+    
+}
+.logo-header,
+.logo-footer{
+    text-transform: uppercase; 
+    font-size:24px;
+    line-height: 24px;
+    border:10px;
+    background-color:#ee3643;
+}
+.company-describe{
+    font-size:16px;
+    line-height: 23px;
+    font-style:italic;
+    color:#ee3643;
+    
+}
+.address-header{
+    color:#32425c;
+    font-size: 14px;
+    line-height:24px;
+    font-style:normal;
+    color:#32425c;
+}
+.telefone-number{
+    font-size:21px;
+    line-height: 21px;
+    color:#ee3643;
+}
+
+.popular{
+    background-color:#f9f5f0;
 }
 .main-menu{
-    color:grey;
     padding:0px;
     margin:0px;
 }
-ul{
-    width:180px;
-}
 .main-menu a{
+    font-size:17px;
+    line-height: 17px;
     text-decoration: none;
     border:1px solid #e5e5e5;
     padding: 8px 14px;
-    color: white;
+    color: #ffffff;
     display:inline-block;
-    background-color: #2980b9;
+    background-color: #32425c;
 }
 .main-menu a:hover {
-    background-color: darkblue;
-    color:whitesmoke;
+    background-color:#1d2739;
+    color:#686f7b;
+}
+
+.adventages b{
+    font-size:24px;
+    line-height: 30px;
+    color:white;
+}
+.adventages p{
+    font-size:14px;
+    line-height: 18px;
+    color:white;
+    background-color: #35a9cc;
 }
 
 
-a:active{
+.slider b{
+    font-size:24px;
+    line-height: 30px;
+    color:white;
+}
+.main-page h2{
+    font-size:30px;
+    line-height: 30px;
+    color:#32425c;
+}
+.index-list li{
+    font-family: 'PTSans',"Arial", sans-serif;
+    font-size:17px;
+    line-height:18px;
+}
+.catalog-item .product-name{
+    font-family:
+    font-size:18px;
+    line-height: 20px;
+    font-weight:700;
+    color:black; 
+}
+.main-page .button{
+    font-family: 'PTSans',Arial, sans-serif;
+    font-size:14px;
+    line-height: 18px;
+    color:black; 
+    background-color:#ee3643;
+} 
+.catalog-item del{
+    color:grey;
+}
+
+.services p,
+.delivery p{
+font-family: 'PTSans',Arial, sans-serif;    
+font-size:13px;
+line-height: 24px; 
+color:black;
     
+}
+.services-delivery{
+    background-color:#f4f8f9;
+}
+.services-item a{
+    font-size:21px;
+    line-height: 30px;   
+}
+.company-description p{
+font-family: 'PTSans',Arial, sans-serif;    
+font-size:13px;
+line-height: 24px; 
+color:black;     
+}
+.delivery-companies{
+    font-family: 'PTSans',Arial, sans-serif;    
+    font-size:18px;
+    line-height: 20px; 
+    color:black;     
+}
+.contacts p{
+font-family: 'PTSans',Arial, sans-serif;    
+font-size:13px;
+line-height: 24px; 
+color:black;   
+}
+
+.footer-navigation,
+.footer-contact{
+    font-size:18px;
+    line-height: 24px; 
+    color:white;
+}
+.footer-menu a{
+    font-size:18px;
+    line-height: 24px; 
+    color:#ffd180;
+}
+.footer-social p{
+    font-size:16px;
+    line-height: 18px; 
+    color:white;
+}
+.mail a{
+    color:#ffd180;
+}
+.networks a{
+   
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #bdc3c7;
+  margin-right: 10px;
+  vertical-align: middle;
+    
+}
+.footer-nav{
+    background-color:#32425c;
+}
+.footer-social{
+    background-color:#293449;
+}
+
+-------------------------------------------------------
+.deferred-goods a {
+    background-color:#ee3643;
+}
+.my-menu a{
+    font-size:16px;
+    line-height: 18px;
+    text-decoration: underline;
+    color:#32425c;
+}
+.login a{
+    font-size:21px;
+    line-height: 21px;
+    color:black;
+}
+.changing-page a{
+    font-family: 'PTSans',"Arial", sans-serif;
+    font-size:13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:black;
+}
+.name-page{
+    font-size:30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:#32425c;
+}
+.name-filter{
+    font-family: 'PTSans',"Arial", sans-serif;
+    font-size:13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:black; 
+}
+.type-sort{
+    font-family: 'PTSans',"Arial", sans-serif;
+    font-weight: 700;
+    font-size:17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:black; 
+    
+}
+.filter-option{
+    font-family: 'PTSans',"Arial", sans-serif;
+    font-size:15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color:black; 
+}
+.form-btn{
+    font-family: 'PTSans',"Arial", sans-serif;
+    font-size:13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:black; 
+}
+.product-info{
+    background-color:#f2f6f8;
+}
+.product-info h4{
+    font-size:30px;
+    line-height: 30px;
+    font-weight:400;
+    text-transform: uppercase;
+    color:black;  
+}
+.product-info p{
+    font-family: 'PTSans',"Arial", sans-serif;
+    font-size:13px;
+    line-height: 24px;
+    color:black; 
 }
