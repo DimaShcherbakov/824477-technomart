@@ -9,45 +9,54 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header>
-       <div class="header-top">
-            <a class="logo-header" href="index.html">ТЕХНОМАРТ</a>
-						<form class="search">
-              <input type="search" placeholder="Поиск:">
+    <header class="main-header">
+      <div class="main-header-container">
+       <div class="full-width">
+          <div class="header-top">
+              <a class="logo-header" href="index.html">ТЕХНОМАРТ</a>
+              <form class="search">
               <button type="submit">
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                       <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
                   </svg>
               </button>
-          </form>         
-            <p class="bookmark">
-              <a href="">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-                     <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
-                 </svg>
-                  Закладки:0      
+              <input type="search" placeholder="Поиск:">
+              
+              </form>         
+              <p class="bookmark">
+                  <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                         <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+                      </svg>
+                      Закладки:0      
+                  </a>
+              </p>
+              <p class="product-basket">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    </svg>
+                 Корзина:10                     <!--<img src="img/icon-cart.svg" width="15" height="15">-->
               </a>
           </p>
-            <p class="product-basket deferred-goods">
-               		<a href="">
-                	<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
-                    <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
-                    <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                	</svg>
-                	Корзина:10                     <!--<img src="img/icon-cart.svg" width="15" height="15">-->
-               		</a>
-          		 </p>
-            <p class="checkout">
+              <p class="checkout">
               <a href="">Оформить заказ</a>
-          	</p>
-       </div>
-       <p class="company-describe">Интернет магазин строительных материалов и инструментов для ремонта</p>
-       <a class="telefone-number"href="tel:+7(812)555-05-55">
-           +7(812)555-05-55             <!--<img src="img/icon-phone.svg" width="19" height="19" alt="Номер телефона +7(812)555-05-55">-->
-       </a>
-       <address class="address-header">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</address>
-       <p class="login">
+              </p>
+          </div>
+         </div>
+         <div class="help-container">
+         <div class="header-center">
+       			<p class="company-describe">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+      				<div class="container-contact">
+           	  <a class="telefone-number" href="tel:+7(812)555-05-55">
+            	  +7(812)555-05-55             <!--<img src="img/icon-phone.svg" width="19" height="19" alt="Номер телефона +7(812)555-05-55">-->
+          		</a>
+          		<address class="address-header">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</address>
+      				 </div>
+      				 <div class="user-container">
+       						<p class="login">
              <a href="">
                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                     <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
@@ -60,10 +69,12 @@
                 </svg>
              </a>
           </p>    
-       <ul class="list my-menu">
+       						<ul class="list my-menu">
              <li><a href="">Мои заказы</a></li>
              <li><a href="">Личный кабинет</a></li>
           </ul>
+        			 </div>
+         </div>
        <nav class="main-navigation">  
               <ul class="list main-menu">
                  <li><a href="">Главная </a></li>
@@ -74,10 +85,14 @@
                  <li><a href="">Доставка </a></li>
                  <li><a href="">Контакты</a></li>
               </ul>
-          </nav>
+       </nav>
+					 
+				</div>
+			</div>
     </header>
       
-    <main class="main-page">
+    <main class="main">
+      <div class="catalog-page">
        <ul class="list changing-page">
            <li>
               <a href="index.html">
@@ -99,8 +114,13 @@
               <a href=""> Перфораторы</a>
            </li>
        </ul>
-       <form class="sorting" action="" method="post" name="sorting-form">
+       
+      		
+       		
            <h1 class="name-page">ПЕРФОРАТОРЫ</h1>
+           <div class="catalog-main">
+           <div class="forms">
+           <form class="sorting" action="" method="post" name="sorting-form">
            <h2 class="name-filter">ФИЛЬТР</h2>
                  
               <fieldset><!--минимальная максимальная цена-->
@@ -157,17 +177,21 @@
               </fieldset>
               <button class="form-btn" type="submit">Показать</button> 
        </form>
-       <h2 class="name-filter">СОРТИРОВКА</h2>
+      </div>
+      <div class="all-catalog">
+      <div class="sort-container">
+       <h2 class="name-sorting">СОРТИРОВКА</h2>
        <ul class="list sort-type"> 
              <li><a href="">ПО ЦЕНЕ</a></li>
              <li><a href="">ПО ТИПУ</a></li>
              <li><a href="">ПО ФУНКЦИОНАЛУ</a></li>
        </ul>
+       </div>
        <ul class="list">
              <li class="arrow-up"></li>                                   <!--<img src="img/icon-up-dir.svg" width="11" height="10">-->
              <li class="arrow-down"></li>                                 <!--<img src="img/icon-down-dir.svg" width="11" height="10">-->
        </ul>
-       <ul class="list catalog-list">
+       <ul class="list catalog-list catalog-container">
              <li class="catalog-item">
                 <a href="">
                     <p class="catalog-item-image">
@@ -268,12 +292,16 @@
              </li>
              
        </ul>
+                                           <div class="catalog-navigation">
                                             <p><a href="">1</a></p>
-                                            <ul class="list">
-                                                <li><a href="">2</a></li>
-                                                <li><a href="">3</a></li>
-                                            </ul>
+                                            <p>
+                                                <a href="">2</a>
+                                                <a href="">3</a>
+                                            </p>
                                             <p><a href="">Следующая</a></p>
+                                            </div>
+      	</div>
+      </div>
       <div class="product-info">
            <h4>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h4>
            <p >
@@ -281,37 +309,41 @@
                Существуют электромеханические и пневматические перфораторы.Современные модели могут выполнять функции дрели, шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор "трёхрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
            </p>
       </div>
-        
+			</div>   
     </main>
     
-    <footer>
-      <div class="footer-nav">
-         <a class="logo-footer" href="index.html">ТЕХНОМАРТ</a>
-               
-         <ul class="list footer-navigation">
-             <li><a href="">Компания</a></li>
-             <li><a href="">Новости</a></li>
-             <li><a href="">Каталог</a></li>
-             <li><a href="">Доставка</a></li>
-             <li><a href="">Контакты</a></li>
-         </ul>
-         <p class="footer-contact">
-         		 г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8
-             <br>+7(812)555-05-55
-         </p>
-         <ul class="list footer-menu">
-             <li><a href="">Материалы</a></li>
-             <li><a href="">Техника</a></li>
-             <li><a href="">Инструмент</a></li>
-             <li><a href="">Спецпредложения</a> </li>
-         </ul>
-      </div>
-      <div class="footer-social">
-         <p>
-             2010-2017 Компания "Техномарт"
-             <br>&#169;Все права защищены
-         </p>
-         <ul class="list networks">
+     <footer class="main-footer">
+          <div class="footer-nav">
+             <div class="footer-container-nav">
+              	<a class="logo-footer" href="index.html">ТЕХНОМАРТ</a>
+              	<ul class="list footer-navigation">
+                  <li><a href="">Компания</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Каталог</a></li>
+                  <li><a href="">Доставка</a></li>
+                  <li><a href="">Контакты</a></li>
+              	</ul>
+              </div>
+              <div class="footer-container-user-nav">
+              	<p class="footer-contact">
+                  г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8
+                  <br>+7(812)555-05-55
+              	</p>
+              	<ul class="list footer-menu">
+                  <li><a href="">Материалы</a></li>
+                  <li><a href="">Техника</a></li>
+                  <li><a href="">Инструмент</a></li>
+                  <li><a href="">Спецпредложения</a> </li>
+              	</ul>
+              </div>
+           </div>
+           <div class="footer-social-container">
+           	<div class=" footer-social">
+              <p>
+                  2010-2017 Компания "Техномарт"
+                  <br>&#169;Все права защищены
+              </p>
+              <ul class="list networks">
                 <li>
                     <a href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
@@ -334,15 +366,16 @@
                     </a>
                 </li>
             </ul>
-         <p class="mail">
-             Обратная связь:
-             <a href="mailto:email@">mail@htmlacademy.ru </a>
-         </p>
-         <p class="mail">
-             Разработано- 
-             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-         </p>
-      </div>
-    </footer>
+              <p class="mail feedback">
+                    Обратная связь:
+                    <a href="mailto:email@">mail@htmlacademy.ru </a>
+                </p>
+              <p class="mail developers">
+                    Разработано- 
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </p>
+          	 </div>
+           </div>
+      </footer>
   </body>
 </html>  
