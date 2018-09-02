@@ -175,6 +175,12 @@ a{
 .user-enter a:focus{
 	color:red;
 }
+.user-enter .user:active{
+	color:#c5c5c5;
+}
+.user:active path{		
+	fill:#c5c5c5;
+}
 .user:hover path,
 .user:focus path{
 	fill:black;
@@ -258,6 +264,10 @@ a{
 .main-menu a:hover,
 .main-menu a:focus{
     background-color:#1d2739;
+    
+}
+.main-menu a:active{
+	background-color:#1d2739;
     color:#686f7b;
 }
 .adventages b{
@@ -554,6 +564,15 @@ color:black;
     line-height: 18px;
     text-decoration: underline;
     color:#32425c;
+}
+.my-menu a:hover,
+.my-menu a:focus{
+   color:red;
+	 border-color:red;
+}
+.my-menu a:active{
+   color:#c5c5c5;
+	 border-color:#c5c5c5;
 }
 .login {
     font-size:21px;
@@ -1027,6 +1046,7 @@ body{
 	padding-right:0px;
 	padding-left:0px;
   padding-top:45px;
+	text-align: right;
 }
 .basket{
 	background-color:#ee3643;
@@ -1034,15 +1054,25 @@ body{
 .login{
 	display:inline-block;
 	text-align:center;
-	padding-left:10px;
-	padding-right:10px;
+	min-width:300px;
+
 	padding-top:10px;
 	padding-bottom:10px;
+
 	background-color:#ffffff;
 }
 .login:hover path,
 .login:focus path{
 	fill:black;
+}
+.login .login-right{
+	padding-left:20px;
+}
+.login .login-left{
+	padding-right:10px;
+}
+.login:active path{
+	fill:#c5c5c5;
 }
 .login:active{
 	color:darkgrey;
@@ -1061,7 +1091,6 @@ body{
 	margin:0px auto;
 	padding:0 10px;
 	padding-top:20px;
-	
 }
 .changing-page{
 	display:flex;
@@ -1359,7 +1388,7 @@ body{
 .catalog-item ins:after{
     content:"";
     position:absolute;
-    top:0;
+    top:0px;
     right:-20px;
     width:0;
     height:0;
