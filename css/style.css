@@ -1283,6 +1283,7 @@ body{
 	font-family:"PTSans","Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
+	position:relative;
 }
 .sort-type a{
 	color:#c5c5c5;
@@ -1307,6 +1308,9 @@ body{
 .sort-type 
 .sort-container{
 	padding-left:18px;
+}
+.sort-container{
+	position:relative;
 }
 .sort-type .price-sort,
 .sort-type .price-sort:hover,
@@ -1673,17 +1677,14 @@ input[type="checkbox"]:checked+.checkbox-indicator{
    color: #fff;
 }
 .icon-down-dir{
-	content: ''; 
-  position: absolute; 
-  right: 20%; 
-	bottom: -18%; 
+	position:absolute;
+  right: 5%; 
+	bottom: 24%; 
   border: 5px solid transparent; 
   border-top: 10px solid #c5c5c5; 
 }
 .icon-up-dir{
-	content: ''; 
-  position: absolute; 
-  right: 22%; 
+  right: 8%; 
 	bottom: -17%; 
   border: 5px solid transparent; 
   border-top: 10px solid red; 
