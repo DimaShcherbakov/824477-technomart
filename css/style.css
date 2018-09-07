@@ -1136,7 +1136,7 @@ body{
 	width:940px;
 	margin:0px auto;
 	padding:0 10px;
-	margin-bottom:72px;
+	padding-bottom:72px;
 	
 }
 .company-contact-container h2{
@@ -1823,7 +1823,6 @@ input[type="checkbox"]:checked+.checkbox-indicator{
 }
 .arrows button{
 	background-color:transparent;
-	border:none;
 }
 
 .icon-down-dir{
@@ -2078,4 +2077,22 @@ input[type="checkbox"]:checked+.checkbox-indicator{
 	background-color:grey;
 	border:2px solid grey;
 	border-radius:3px;
+}
+
+.modal-map{
+	top: 50%;
+	left:17.3%;
+  width: 970px;
+	height:467px;
+	box-shadow: none;
+	background-color:#ffffff;
+	background-image:url(../img/full%20map.png);
+	background-repeat:no-repeat;
+}
+.close{
+	top:15px;
+	right:15px;
+}
+.modal-show{
+	display:block;
 }
