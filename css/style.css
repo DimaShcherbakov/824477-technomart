@@ -367,7 +367,7 @@ input[type="search"]:focus ~  button[type="submit"] path  {
     
 }
 .main-header{
-	padding-bottom:43px;
+	padding-bottom:62px;
 }
 .main-menu a:active{
 	background-color:#1d2739;
@@ -718,7 +718,7 @@ color:black;
     display:inline-block;
     width:218px;
     margin-right:20px;
-    margin-bottom:23px;
+    margin-bottom:20px;
     border:1px solid #ccc;
     font-weight:bold;
     text-align:center;
@@ -758,7 +758,7 @@ color:black;
     font-family: "PTSans","Arial", sans-serif;
     font-size:13px;
     line-height: 18px;
-		padding-left:32px;
+		padding-left:37px;
     text-transform: uppercase;
     color:black;
 }
@@ -777,7 +777,8 @@ color:black;
     line-height: 18px;
     text-transform: uppercase;
     color:black; 
-	margin:0px;
+		margin:0px;
+	padding-left:18px;
 }
 .type-sort{
     font-family: "PTSans","Arial", sans-serif;
@@ -786,7 +787,7 @@ color:black;
     line-height: 30px;
     text-transform: uppercase;
     color:black; 
-		margin-bottom:20px;
+		padding-bottom:15px;
     
 }
 .filter-option{
@@ -796,7 +797,7 @@ color:black;
     text-transform: uppercase;
     color:black; 
 	padding:0px;
-		margin-bottom:10px;
+		margin-bottom:20px;
 }
 .form-btn{
     font-family: 'PTSans',"Arial", sans-serif;
@@ -819,7 +820,7 @@ color:black;
 .product-info{
 		width:100%;
    background-color:#f2f6f8;
-	 padding-top:60px;
+	 padding-top:47px;
 	 padding-bottom:70px;
 }
 .product-info-container{
@@ -838,7 +839,8 @@ color:black;
     font-size:30px;
     line-height: 30px;
     font-weight:400;
-		padding-bottom:30px;
+		padding-bottom:25px;
+	padding-left:0;
     text-transform: uppercase;
     color:black;  
 }
@@ -854,6 +856,7 @@ color:black;
 		width:940px;
 		margin:0 auto;
 		padding:0 10px;
+	padding-left:0;
 }
 
 
@@ -1326,6 +1329,7 @@ body{
 	margin:0px auto;
 	padding:0 10px;
 	padding-top:20px;
+	padding-bottom:20px;
 }
 .changing-page{
 	display:-webkit-box;
@@ -1343,8 +1347,8 @@ body{
 }
 .name-page{
 	background-color:#f2f6f8;
-	padding-left:25px;
-	padding-top:25px;
+	padding-left:27px;
+	padding-top:29px;
 	padding-bottom:30px;
 }
 .catalog-main{
@@ -1384,13 +1388,12 @@ body{
 	min-width:380px;
 	padding-top:10px;
 	padding-bottom:10px;
-	padding-left:150px;
+	padding-left:133px;
 }
 .sort-type{
 	font-family:"PTSans","Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
-	position:relative;
 }
 .sort-type a,
 .sort-type .price-sort{
@@ -1448,16 +1451,17 @@ body{
 	display:flex;	
 	margin:0;
 	padding:0;
-	margin-top:40px;
+	margin-top:32px;
 	margin-bottom:40px;
 }
 .catalog-navigation a,
 .catalog-navigation .active-item{
+	
 	display:inline-block;
-	padding-top:5px;
-	padding-bottom:5px;
-	padding-left:10px;
-	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:7px;
+	padding-left:16px;
+	padding-right:15px;
 	margin:0;
 	margin-right:10px;
 	background-color:transparent;
@@ -1669,6 +1673,7 @@ body{
 }
 .filter{
 	padding:0px;
+	margin:0px;
 }
 .price-range{
 	display:-webkit-box;
@@ -1677,17 +1682,16 @@ body{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding-bottom:26px;
+	padding-bottom:25px;
 	border-bottom:1px solid #f7f3ec;
-	margin-bottom:20px;
+	margin-bottom:16px;
 }
 .sorting .manufacturers{
 	border-bottom:1px solid #f7f3ec;
 	margin-bottom:20px;
 }
 .sorting h2{
-	padding-left:0px;
-	padding-right:20px;
+	padding-left:18px;
 	margin-bottom:10px;
 }
 .price-range input[type="number"]{
@@ -1823,15 +1827,20 @@ input[type="checkbox"]:checked+.checkbox-indicator{
 }
 .arrows button{
 	background-color:transparent;
+	padding:0px;
 }
 
 .icon-down-dir{
 	position:relative;
-	top:5px;
+	top:1px;
+	left:40px;
   border: 7px solid transparent; 
   border-top: 12px solid #c5c5c5; 
 }
 .icon-up-dir{
+	position:relative;
+	bottom:6px;
+	left:20px;
   border: 6px solid transparent; 
   border-top: 10px solid red; 
 	-webkit-transform: rotate(180deg); 
@@ -1847,6 +1856,7 @@ input[type="checkbox"]:checked+.checkbox-indicator{
 .icon-up-dir:active,
 .icon-down-dir:active{
 	border-top: 10px solid red; 
+	outline:none;
 }
 /*-----------------------------------------modal window index---------------------------------*/
 .modal {
@@ -2029,8 +2039,8 @@ input[type="checkbox"]:checked+.checkbox-indicator{
 	position:relative;
 	display:block;
 	padding-top:40px;
-	padding-bottom:40px;
-	margin-bottom:20px;
+	padding-bottom:38px;
+	margin-bottom:6px;
 	background-color:#f7f3ec;
 }
 .range-line{
@@ -2095,4 +2105,50 @@ input[type="checkbox"]:checked+.checkbox-indicator{
 }
 .modal-show{
 	display:block;
+	animation: bounce 0.6s;
+}
+.credit,
+.guerantee{
+	display:none;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.modal-error {
+  animation: shake 0.6s;
 }

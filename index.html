@@ -203,14 +203,14 @@
                   <h4 class="button link-container "><a class="button-link all-manufactures"  href="">ВСЕ ПРОИЗВОДИТЕЛИ</a></h4>
               </div>
               <ul class="list companies-list">
-                   <li><img src="img/bosch.png" width="126" height="37" alt="BOSCH"></li>
-                   <li><img src="img/Makita.png" width="123" height="40" alt="MAKITA"></li>
-                   <li><img src="img/DeWALT.png" width="146" height="44" alt="DeWALT"></li>
-                   <li><img src="img/Interscol.png" width="200" height="88" alt="ИНТЕРСКОЛ"></li>
-                   <li><img src="img/Hitachi.png" width="169" height="31" alt="HITACHI"></li>
-                   <li><img src="img/LG.png" width="121" height="73" alt="LG"></li>
-                   <li><img src="img/AEG.png" width="151" height="96" alt="AEG"></li>
-                   <li><img src="img/Metabo.png" width="204" height="69" alt="METABO"></li>
+                   <li><a href=""><img src="img/bosch.png" width="126" height="37" alt="BOSCH"></a></li>
+                   <li><a href=""><img src="img/Makita.png" width="123" height="40" alt="MAKITA"></a></li>
+                   <li><a href=""><img src="img/DeWALT.png" width="146" height="44" alt="DeWALT"></a></li>
+                   <li><a href=""><img src="img/Interscol.png" width="200" height="88" alt="ИНТЕРСКОЛ"></a></li>
+                   <li><a href=""><img src="img/Hitachi.png" width="169" height="31" alt="HITACHI"></a></li>
+                   <li><a href=""><img src="img/LG.png" width="121" height="73" alt="LG"></a></li>
+                   <li><a href=""><img src="img/AEG.png" width="151" height="96" alt="AEG"></a></li>
+                   <li><a href=""><img src="img/Metabo.png" width="204" height="69" alt="METABO"></a></li>
                </ul>
             </section>
          </div>
@@ -236,13 +236,12 @@
                  <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
                  <p class="help-delivery">Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
               </section>
-<!--
-              <section class="guerantee">
+              <section class="visually-hidden guerantee">
              	   <h2>ГАРАНТИЯ</h2>
                  <p> Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
                  <p class="help-guerantee"> Дом восстановите уже как-нибудь сами.</p>
               </section>
-              <section class="credit">
+              <section class="visually-hidden credit">
              	   <h2>КРЕДИТ</h2>
                  <p>Залезть в долговую  яму стало проще!</p>
                  <p class="help-credit">Кредитные консультантты придут к вам на помощь.</p>
@@ -250,7 +249,6 @@
                  	<a class="send-message" href="">Отправить заявку</a>
                  </p>
               </section>
--->
             </div>
          	</div>
          </div>
@@ -357,11 +355,11 @@
       		<div class="login-inputs">
       			<p>
       				<label for="name">Ваше имя:</label><br>
-      				<input class="user-name" type="text" id="name" placeholder=" Имя Фамилия">
+      				<input class="user-name" type="text" id="name" name="login" placeholder=" Имя Фамилия">
       			</p>
       			<p>
       				<label for="email">Ваш email:</label><br>
-      				<input class="user-mail"type="email" id="email" placeholder=" email@example.com">
+      				<input class="user-mail" type="email" id="email" name="mail" placeholder=" email@example.com">
       			</p>
       			<p>
       				<label for="textarea">Текст письма:</label>
@@ -382,19 +380,67 @@
   			<button class="modal-close close" type="button">Закрыть</button>
 		  </section>
 -->
+<!--
 		<script>
-				var link = document.querySelector(".address");
-				var popup = document.querySelector(".modal-login");
-				var close = popup.querySelector(".modal-close");
-			 	link.addEventListener("click", function (evt) {
-						evt.preventDefault();
-						popup.classList.add("modal-show");
-					 	login.focus();
-					});
-				close.addEventListener("click", function (evt) {
-						evt.preventDefault();
-    				popup.classList.remove("modal-show");
-  				});
-		</script>
+  var link = document.querySelector(".login-link");
+  
+  var popup = document.querySelector(".modal-login");
+  var close = popup.querySelector(".modal-close");
+  
+  var form = popup.querySelector("form");
+  var login = popup.querySelector("[name=login]");
+  var mail = popup.querySelector("[name=mail]");
+  
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    
+    if (storage) {
+      login.value = storage;
+      mail.focus();
+    } else {
+      login.focus();
+    }
+  });
+  
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+  
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !password.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+  });
+  
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
+-->
   </body>
 </html>
