@@ -264,7 +264,10 @@ input[type="search"]:focus ~  button[type="submit"] path  {
 	color:#c5c5c5;
 }
 .main-page{
-    background-color:#ffffff;
+	width:940px;
+	margin:0px auto;
+	padding:0 10px;
+  background-color:#ffffff;
 }
 .registration a{
 	display:block;
@@ -280,7 +283,7 @@ input[type="search"]:focus ~  button[type="submit"] path  {
 
 
 .company-describe{
-		max-width:204px;
+		max-width:200px;
     font-size:16px;
     line-height: 23px;
     font-style:italic;
@@ -288,12 +291,12 @@ input[type="search"]:focus ~  button[type="submit"] path  {
     color:#ee3643; 
 		width:300px;
 		padding-top:49px;
-		padding-left: 53px;
-		padding-right: 45px;
+		padding-left: 50px;
+		padding-right: 50px;
 		padding-bottom: 40px;
-		margin-right: 20px;
 		margin-top: 0px;
 		margin-bottom:0px;
+		margin-right:20px;
 		text-align:left;
 	
 }
@@ -368,6 +371,7 @@ input[type="search"]:focus ~  button[type="submit"] path  {
 }
 .main-header{
 	padding-bottom:62px;
+	background-color:#f4f8f9;
 }
 .main-menu a:active{
 	background-color:#1d2739;
@@ -463,7 +467,6 @@ input[type="search"]:focus ~  button[type="submit"] path  {
 	border-radius: 3px;
 	background-color:#ee3643;
 	margin:0px;
-	
 }
 .all-manufactures{
 	display:inline-block;
@@ -476,6 +479,9 @@ input[type="search"]:focus ~  button[type="submit"] path  {
 	border-radius: 3px;
 	background-color:#ee3643;
 	margin:0px;
+}
+.all-catalog{
+	width:700px;
 }
 .catalog-item del{
     color:grey;
@@ -504,6 +510,9 @@ color:black;
 	padding-bottom:75px;
   background-color:#f4f8f9;
 	
+}
+.inner-page{
+	background-color:white;
 }
 .full-services-delivery{
 	display:-webkit-box;
@@ -613,6 +622,9 @@ color:black;
 		padding-left:5px;
     color:white;
 }
+.footer-contact{
+	width:330px;
+}
 .footer-navigation a:hover,
 .footer-menu a:hover,
 .footer-navigation a:focus,
@@ -648,6 +660,7 @@ color:black;
 }
 .info-company{
 	display:block;
+	width:240px;
 	margin:0px;
 }
 .footer-social info-company{
@@ -660,12 +673,12 @@ color:black;
 }
 .feedback{
 	margin-top:0;
-	
+	width:150px;
 }
 .developers{
 	margin-top:0;
 	margin-left:27px;
-	padding-right:10px;
+	padding-right:15px;
 	width:100px;
 	text-align: left;
 }
@@ -787,7 +800,7 @@ color:black;
     line-height: 30px;
     text-transform: uppercase;
     color:black; 
-		padding-bottom:15px;
+		padding-bottom:14px;
     
 }
 .filter-option{
@@ -965,11 +978,11 @@ body{
 	font-size:14px;
 	line-height:18px;
 	display:block;
-	width:112px;
+	max-width:112px;
 	color:white;
 	padding-top:12px;
 	padding-bottom:10px;
-	background-color:rgb(229,229,229,0.4);
+	background-color:rgba(229,229,229,0.4);
 	margin-right:0px;
 	margin-top:10px;
 	margin-bottom:20px;
@@ -986,10 +999,10 @@ body{
 
 .catalog-link:hover,
 .catalog-link:focus{
-	background-color:rgb(229,229,229,0.6);
+	background-color:rgba(229,229,229,0.8);
 }
 .catalog-link:active{
-	background-color:rgb(229,229,229,0.8);
+	background-color:rgba(229,229,229,1);
 }
 .button-link:hover,
 .button-link:focus{
@@ -1001,12 +1014,17 @@ body{
 	padding-top:62px;
 	padding-bottom:55px;
 	margin-bottom:0px;
+	margin-top:0;
+	width: 940px;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+}
+.advantages > li:first-child {
+	width: 640px;
 }
 .first-container{
 	display:-webkit-box;
@@ -1062,6 +1080,7 @@ body{
 	padding:0px;
 	padding-bottom:83px;
 }
+
 .companies-list li{
 	display:block;
 	width:218px;
@@ -1091,11 +1110,10 @@ body{
 
 
 .container-contact{
-	width:300px;
+	width:270px;
 	padding-top:47px;
 	padding-right:30px;
 	margin-right:20px;
-	
 }
 .user-enter{
 	display:inline-block;
@@ -1105,7 +1123,7 @@ body{
 }
 
 .registration{
-	width:300px;
+	width:280px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1120,11 +1138,7 @@ body{
 	display:flex;
 }
 
-.main-page{
-	width:940px;
-	margin:0px auto;
-	padding:0 10px;
-}
+
 .main-page h4{
 	margin:0;
 	padding:0;
@@ -1140,7 +1154,7 @@ body{
 	margin:0px auto;
 	padding:0 10px;
 	padding-bottom:72px;
-	
+	background-color:#ffffff;
 }
 .company-contact-container h2{
 	margin-top:78px;
@@ -1181,7 +1195,7 @@ body{
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	padding-left:113px;
+	padding-left:100px;
 }
 .footer-navigation a{
 	display:inline-block;
@@ -1210,6 +1224,7 @@ body{
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
+	padding-left:5px;
 }
 
 .footer-social-container{
@@ -1249,10 +1264,11 @@ body{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	width:132px;
 	padding:0;
 	margin:0px;
-	padding-left:153px;
-	margin-right:115px;
+	padding-left:146px;
+	margin-right:120px;
 }
 .second-container .delivery{
 	background-color:#ffc047;
@@ -1260,7 +1276,6 @@ body{
 	background-repeat: no-repeat;
 	background-position:87% 53%;
 }
-
 .slider-container{
 	width:620px;
 	height:241px;
@@ -1281,7 +1296,7 @@ body{
 	width:300px;
 	padding-right:0px;
 	padding-left:0px;
-  padding-top:45px;
+  padding-top:47px;
 	text-align: right;
 }
 .basket{
@@ -1290,7 +1305,7 @@ body{
 .login{
 	display:inline-block;
 	text-align:center;
-	min-width:300px;
+	width:300px;
 
 	padding-top:10px;
 	padding-bottom:10px;
@@ -1302,10 +1317,10 @@ body{
 	fill:black;
 }
 .login .login-right{
-	padding-left:20px;
+	padding-left:26px;
 }
 .login .login-left{
-	padding-right:10px;
+	margin-right:7px;
 }
 .login:active path{
 	fill:#c5c5c5;
@@ -1330,6 +1345,7 @@ body{
 	padding:0 10px;
 	padding-top:20px;
 	padding-bottom:20px;
+	background-color:white;
 }
 .changing-page{
 	display:-webkit-box;
@@ -1640,13 +1656,13 @@ body{
   	-webkit-box-align: center;
   	    -ms-flex-align: center;
   	        align-items: center;
+		justify-content:center;
 		margin:0px;
     width:220px;
     height:165px;
 }
 .catalog-item img{
     max-width:100%;
-	margin-left:16px;
 }
 .catalog-item del{
     min-height:20px;
@@ -1691,6 +1707,7 @@ body{
 	margin-bottom:20px;
 }
 .sorting h2{
+	width:200px;
 	padding-left:18px;
 	margin-bottom:10px;
 }
