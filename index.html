@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css" type='text/css'>
-    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link rel="stylesheet" href="css/style.min.css" type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -32,7 +32,7 @@
          		<div class="header-center">
           		<h1 class="company-describe">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
           		<div class="container-contact">
-           	  	<a class="telefone-number" href="tel:+78125550555">
+           	  	<a class="telefone-number" href="tel:+7 (812) 555-05-55">
             	  	+7(812)555-05-55         
           			</a>
           			<address class="address-header">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</address>
@@ -65,7 +65,7 @@
          </div>
       </header>
       
-      <main class="main index-page">
+      <main class="main">
          <div class="main-page">
           <ul class="list advantages">
             <li>
@@ -80,9 +80,15 @@
                   <a class="catalog-link" href="">НА ВСЕ СЛУЧАИ</a>
               </li>
               <li class="slider-container ">
-              	<div class="slider"><!--Slider-->
-                <b>ДРЕЛИ</b>
-               	<p> Соседям на радость!</p>
+              <ul class="list slider">
+              	<li class="slide1">
+                	<b>ДРЕЛИ</b>
+               		<p> Соседям на радость!</p>
+               	</li>
+               	<li class="slide2 none visually-hidden">
+               		<b>ПЕРФОРАТОРЫ</b>
+               		<p >Настоящие мужские игрушки</p>
+               	</li>
                	<div class="slides-container"> 
               		<ul class="list slides-arrows">
               			<li>
@@ -100,17 +106,13 @@
               			</button>
               		</li>
               	</ul>
-               	<a class="open-catalog link-container" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-               	<ul class="list slides-switches">
-                   <li class="slide-radio">
-                       <button class="slide-button"></button>
-                   </li>
-                   <li class="slide-radio">
-                       <button class="slide-button"></button>
-                   </li>
-               	</ul>
+               		<a class="open-catalog link-container" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+               		<div class="slides-switches">
+               			<input type="radio" class="slide-radio">
+               			<input type="radio" class="slide-radio" checked>
+               		</div>
                	</div>
-              </div>
+             	 </ul>
               </li>
              </ul>
             </li>
@@ -231,24 +233,32 @@
                  <li><a href="#guerantee">Гарантия</a></li>
                  <li><a href="#credit">Кредит</a></li>
             	</ul>
-             	<section class="delivery">
-             	   <h2>ДОСТАВКА</h2>
-                 <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-                 <p class="help-delivery">Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-              </section>
-              <section class="visually-hidden guerantee">
-             	   <h2>ГАРАНТИЯ</h2>
-                 <p> Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-                 <p class="help-guerantee"> Дом восстановите уже как-нибудь сами.</p>
-              </section>
-              <section class="visually-hidden credit">
-             	   <h2>КРЕДИТ</h2>
-                 <p>Залезть в долговую  яму стало проще!</p>
-                 <p class="help-credit">Кредитные консультантты придут к вам на помощь.</p>
-                 <p >
-                 	<a class="send-message" href="">Отправить заявку</a>
-                 </p>
-              </section>
+            	<ul class="list slider-help">
+            		<li>
+             			<section class="delivery">
+             	   		<h2>ДОСТАВКА</h2>
+                 		<p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                 		<p class="help-delivery">Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+              		</section>
+              	</li>
+              	<li>
+              		<section class="visually-hidden guerantee">
+             	   		<h2>ГАРАНТИЯ</h2>
+                 		<p> Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                 	<p class="help-guerantee"> Дом восстановите уже как-нибудь сами.</p>
+              		</section>
+              	</li>
+              	<li>
+              		<section class="visually-hidden credit">
+             	   		<h2>КРЕДИТ</h2>
+                 		<p>Залезть в долговую  яму стало проще!</p>
+                 		<p class="help-credit">Кредитные консультантты придут к вам на помощь.</p>
+                 		<p >
+                 			<a class="send-message" href="">Отправить заявку</a>
+                 		</p>
+              		</section>
+              </li>
+							</ul>
             </div>
          	</div>
          </div>
@@ -274,7 +284,7 @@
               	<h2>КОНТАКТЫ</h2>
               	<p>
                	   Вы  можете забрать товар сами,<br> заехав в наш офис:
-                	 <img src="img/map.jpg" width="300" height="158" alt="г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">
+                	 <img src="img/map.jpg" width="300" height="158">
               	</p>
               	<p class="button btn link-container "><a class="address" href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a></p>
           		</section>
@@ -348,7 +358,6 @@
         </div>
       </footer>
       
-<!--
       <section class="modal modal-login">
       	<form action="" method="post">
       	<div class="login-container">
@@ -373,74 +382,12 @@
       	</form>
   			<button class="modal-close" type="button">Закрыть</button>
 		  </section>
--->
 
-<!--
-      <section class="modal modal-map">
+      <section class="modal none modal-map">
   			<button class="modal-close close" type="button">Закрыть</button>
 		  </section>
--->
-<!--
-		<script>
-  var link = document.querySelector(".login-link");
-  
-  var popup = document.querySelector(".modal-login");
-  var close = popup.querySelector(".modal-close");
-  
-  var form = popup.querySelector("form");
-  var login = popup.querySelector("[name=login]");
-  var mail = popup.querySelector("[name=mail]");
-  
-  var isStorageSupport = true;
-  var storage = "";
+		  
+ 			<script src="../824477-technomart/js/script.min.js"></script>
 
-  try {
-    storage = localStorage.getItem("login");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    
-    if (storage) {
-      login.value = storage;
-      mail.focus();
-    } else {
-      login.focus();
-    }
-  });
-  
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-  
-  form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
-      }
-    }
-  });
-  
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
-</script>
--->
   </body>
 </html>
