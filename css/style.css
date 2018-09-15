@@ -1,4 +1,5 @@
-﻿body {
+﻿
+body {
 
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 17px;
@@ -1292,13 +1293,13 @@ body {
 	width: 940px;
 	margin: 0px auto;
 	padding: 0 10px;
-	padding-bottom: 70px;
+	padding-bottom: 68px;
 	background-color: #ffffff;
 }
 
 .company-contact-container h2 {
 	margin-top: 78px;
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 	font-weight: 400;
 }
 
